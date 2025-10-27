@@ -1,37 +1,50 @@
-// pages/index.js
+import React from "react";
+
 export default function Home() {
   return (
-    <div className="bg-white">
-      {/* HERO */}
-      <section
-        className="relative w-full h-[70vh] bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://www.lg.com/content/dam/channel/wcms/co/homepage/main-hero/lg-oled-tv-banner.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <div className="text-center text-white max-w-2xl">
-            <h1 className="text-4xl font-bold mb-4">
-              Experiencia OLED Inigualable
-            </h1>
-            <p className="text-lg mb-6">
-              Colores más vivos, negros perfectos y diseño premium.
-            </p>
-            <button className="bg-lgRed text-white px-6 py-3 rounded-full font-semibold hover:bg-red-800 transition">
-              Ver productos
-            </button>
-          </div>
-        </div>
-      </section>
+    <main style={{
+      fontFamily: "Arial, sans-serif",
+      backgroundColor: "#fff",
+      minHeight: "100vh",
+    }}>
+      <header style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "1rem 2rem",
+        borderBottom: "1px solid #e0e0e0",
+      }}>
+        <img
+          src="/logo-lg.png"
+          alt="LG Logo"
+          style={{ height: "40px" }}
+        />
+        <nav>
+          <a href="#" style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}>TV</a>
+          <a href="#" style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}>Audio</a>
+          <a href="#" style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}>Electrodomésticos</a>
+          <a href="#" style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}>Soporte</a>
+        </nav>
+      </header>
 
-      {/* PRODUCTOS DESTACADOS */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-8 text-center text-lgDark">
-          Productos Destacados
-        </h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {[
-            {
-              img: "https://www.lg.com/co/images/televisores/md07533719/gallery/
+      <section style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+        textAlign: "center",
+        padding: "4rem 2rem",
+        background: "#f5f5f5"
+      }}>
+        <h1 style={{ fontSize: "2.5rem", color: "#000", fontWeight: "bold" }}>
+          Bienvenido a LG Digital Colombia
+        </h1>
+        <p style={{ maxWidth: "600px", marginTop: "1rem", color: "#444" }}>
+          Descubre televisores, audio, electrodomésticos y soluciones innovadoras de LG diseñadas para tu hogar.
+        </p>
+        <button style={{
+          marginTop: "2rem",
+          padding: "0.75rem 1.5rem",
+          backgroundColor: "#a50034",
+          color: "#fff",
+          bo
