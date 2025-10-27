@@ -15,11 +15,14 @@ html {
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 button {
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 a {
@@ -30,4 +33,38 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cc0000;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0000;
+}
+
+/* Responsive container utilities */
+@layer components {
+  .container-lg {
+    @apply max-w-7xl mx-auto px-4 md:px-16;
+  }
+
+  .btn-primary {
+    @apply bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-semibold py-2 px-4 rounded-lg transition duration-300;
+  }
 }
