@@ -5,11 +5,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 h-16">
         {/* LOGO */}
         <div className="flex items-center space-x-3">
-          <img
-            src="/logo-lg.svg"
-            alt="LG Logo"
-            className="h-8 w-auto"
-          />
+          <img src="/logo-lg.svg" alt="LG Logo" className="h-8 w-auto" />
         </div>
 
         {/* NAV */}
