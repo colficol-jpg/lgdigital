@@ -1,5 +1,6 @@
 'use client';
 import React from "react";
+import Header from "./components/Header";
 
 const productos = [
   {
@@ -43,32 +44,39 @@ const productos = [
 export default function Page() {
   return (
     <div className="min-h-screen bg-black text-white">
-      <h1 className="text-4xl font-bold text-center py-10 text-red-500">
-        Tienda LG
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 pb-10">
-        {productos.map((producto) => (
-          <div
-            key={producto.id}
-            className="bg-gray-900 rounded-2xl shadow-lg overflow-hidden border border-red-700"
-          >
-            <img
-              src={producto.imagen}
-              alt={producto.nombre}
-              className="w-full h-64 object-cover"
-            />
-            <div className="p-4 text-center">
-              <h2 className="text-lg font-semibold">{producto.nombre}</h2>
-              <p className="text-red-500 font-bold text-xl mt-2">
-                {producto.precio}
-              </p>
-              <button className="mt-4 bg-transparent border-2 border-red-600 text-red-500 py-2 px-4 rounded-xl hover:bg-red-600 hover:text-white transition">
-                Agregar al carrito
-              </button>
+      <Header />
+
+      <div className="pt-24 max-w-7xl mx-auto px-6 pb-16">
+        <h1 className="text-4xl font-bold text-center mb-10 text-red-500">
+          Televisores en Oferta
+        </h1>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {productos.map((producto) => (
+            <div
+              key={producto.id}
+              className="bg-gray-900 rounded-2xl shadow-lg overflow-hidden border border-red-700 hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src={producto.imagen}
+                alt={producto.nombre}
+                className="w-full h-64 object-cover hover:opacity-90 transition"
+              />
+              <div className="p-4 text-center">
+                <h2 className="text-lg font-semibold">{producto.nombre}</h2>
+                <p className="text-red-500 font-bold text-xl mt-2">{producto.precio}</p>
+                <button className="mt-4 bg-transparent border-2 border-red-600 text-red-500 py-2 px-4 rounded-xl hover:bg-red-600 hover:text-white transition">
+                  Agregar al carrito
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+
+      <footer className="text-center py-6 border-t border-red-800 text-zinc-400 text-sm">
+        © 2025 Tienda LG - Todos los derechos reservados.
+      </footer>
     </div>
   );
 }
