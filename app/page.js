@@ -5,37 +5,43 @@ const productos = [
     id: 1,
     nombre: "LG OLED evo 77\"",
     precio: "$10.999.000",
-    imagen: "https://www.lg.com/co/images/televisores/md07560538/gallery/medium01.jpg",
+    imagen:
+      "https://www.lg.com/co/images/televisores/md07560538/gallery/medium01.jpg",
   },
   {
     id: 2,
     nombre: "LG QNED 75\"",
     precio: "$8.499.000",
-    imagen: "https://www.lg.com/co/images/televisores/md07560543/gallery/medium01.jpg",
+    imagen:
+      "https://www.lg.com/co/images/televisores/md07560543/gallery/medium01.jpg",
   },
   {
     id: 3,
     nombre: "LG LED 43\"",
     precio: "$1.599.000",
-    imagen: "https://www.lg.com/co/images/televisores/md07560547/gallery/medium01.jpg",
+    imagen:
+      "https://www.lg.com/co/images/televisores/md07560547/gallery/medium01.jpg",
   },
   {
     id: 4,
     nombre: "LG NanoCell 65\"",
     precio: "$4.499.000",
-    imagen: "https://www.lg.com/co/images/televisores/md07560542/gallery/medium01.jpg",
+    imagen:
+      "https://www.lg.com/co/images/televisores/md07560542/gallery/medium01.jpg",
   },
   {
     id: 5,
     nombre: "LG UHD 50\"",
     precio: "$3.299.000",
-    imagen: "https://www.lg.com/co/images/televisores/md07560548/gallery/medium01.jpg",
+    imagen:
+      "https://www.lg.com/co/images/televisores/md07560548/gallery/medium01.jpg",
   },
   {
     id: 6,
     nombre: "LG OLED C3 55\"",
     precio: "$7.999.000",
-    imagen: "https://www.lg.com/co/images/televisores/md07560544/gallery/medium01.jpg",
+    imagen:
+      "https://www.lg.com/co/images/televisores/md07560544/gallery/medium01.jpg",
   },
 ];
 
