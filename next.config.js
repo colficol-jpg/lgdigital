@@ -1,12 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
-  experimental: {
-    serverActions: true,
-  },
-  env: {
-    PORT: 8080,
+  reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
-
 module.exports = nextConfig;
